@@ -21,6 +21,10 @@
     .col-lg-12 {
         width: calc(100% - var(--gutter));
     }
+
+    .col-lg-1{
+        width: calc(8.33% - var(--gutter));
+    }
     
  
 }
@@ -46,6 +50,10 @@
     .col-md-12 {
         width: calc(100% - var(--gutter));
     }
+
+    .col-md-1{
+        width: calc(8.33% - var(--gutter));
+    }
     
 
 }
@@ -70,11 +78,16 @@
     .col-sm-12 {
         width: calc(100% - var(--gutter));
     }
+
+    .col-md-1{
+        width: calc(8.33% - var(--gutter));
+    }
+
+    .col-md-1{
+        width: calc(8.33% - var(--gutter));
+    }
     
 
 }
-
-
-
 
 /* --------------------- адаптивность через медазапросы --------------------- */
