@@ -56,6 +56,7 @@ font-size: 36px;
         font-family: 'Oswald', sans-serif;
         font-weight: 500;
         font-size: 21px;
+        letter-spacing: 0.02em;
 }
 
 .text-p{
@@ -124,6 +125,14 @@ line-height: 95px;
 text-transform: uppercase;
 letter-spacing: 0.02em;
 color: var(--white-color);
+}
+
+
+@media screen and (max-width:380px) {
+    .h1 {
+        font-size: 48px;
+        line-height: 64px;
+    }
 }
 
 .h4 {
@@ -205,6 +214,7 @@ color: var(--white-color);
 
     .info {
         position: absolute;
+        padding: 30px 0;
     }
     .about__grid {
         grid-template-columns: repeat(1, 1fr);
@@ -364,3 +374,71 @@ margin-bottom: 7px;
       
     
   }
+
+  .services {
+    padding: 150px 0;
+}
+
+/* Общие стили */
+.services__h2, .services__h4 {
+    color: #000;
+    text-align: center;
+}
+
+/* Отдельные стили для тега */
+.services__h2{
+  margin-bottom: 55px;
+}
+
+.services__h4{
+    margin: 0 auto;
+    max-width: 172px;
+    text-transform: uppercase;
+
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+
+}
+
+.services__grid-item {
+ padding: 59px 0;
+ background-color: #f7f7f7;
+ width: 350px;
+}
+
+.services__icon {
+    margin: 0 auto 21px;
+}
+
+@media screen and (max-width: 1280px) {
+.services{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.services__grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.services__grid-item{
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .services__grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+
+    
+}
