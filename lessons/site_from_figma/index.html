@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Site</title>
     <link rel="stylesheet" href="../site_from_figma/css/style.min.css">
+    <link rel="stylesheet" href="../site_from_figma/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -174,22 +175,22 @@
         <div class="container">
             <h2 class="text-h2 section__h2">Ответы на вопросы </h2>
             <div class="question_items">
-                <div class="question_item">
-                    <h3 class="text-h3 question_h3 close">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</h3>
+                <details class="question_item">
+                    <summary class="text-h3 question_h3">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</summary>
                     <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-            </div>
-            <div class="question_item">
-                <h3 class="text-h3 question_h3 open">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</h3>
+                </details>
+            <details class="question_item">
+                <summary class="text-h3 question_h3">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</summary>
                 <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-        </div>
-        <div class="question_item">
-            <h3 class="text-h3 question_h3 close">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</h3>
+        </details>
+        <details class="question_item">
+            <summary class="text-h3 question_h3">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</summary>
             <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-    </div>
-    <div class="question_item">
-        <h3 class="text-h3 question_h3 close">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</h3>
+    </details>
+    <details class="question_item">
+        <summary class="text-h3 question_h3">РАБОТАЕТЕ ЛИ ВЫ ПО 249 ФЗ?</summary>
         <p class="text-p question_p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. </p>
-</div>
+</details>
         </div>
        </section>
        
@@ -280,7 +281,11 @@
                     <div class="contacts__item">
                         <img src="./img/map.svg" alt="phone" class="contacts__icon">
                          <h3 class="text-h3 contacts__h3 contacts__h3-gray">Телефон:</h3>
-                         <h3 class="text-h3 contacts__h3 ">8 (812) 111-11-22 <br>8 (812) 111-11-22</h3>
+                         <h3 class="text-h3 contacts__h3 ">
+                         <a href="tel:+79011231122">8 (812) 111-11-22</a>
+                            <br>
+                            <a href="tel:+79052387121">8 (812) 111-11-22</a>
+                        </h3>
                     </div>
                     <div class="contacts__item">
                         <img src="./img/phone.svg" alt="time" class="contacts__icon">
@@ -290,7 +295,9 @@
                     <div class="contacts__item">
                         <img src="./img/lock.svg" alt="mail" class="contacts__icon">
                          <h3 class="text-h3 contacts__h3 contacts__h3-gray">e-mail</h3>
-                         <h3 class="text-h3 contacts__h3 contacts__h3-accent ">info@vip.ru</h3>
+                         <h3 class="text-h3 contacts__h3 contacts__h3-accent ">
+                            <a href="mailto:test@mail.test">info@vip.ru</a>
+                         </h3>
                     </div>
                 </div>
             </div>
