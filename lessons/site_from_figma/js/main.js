@@ -5,5 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var modal = document.querySelectorAll('.modal');
     var instances_modal = M.Modal.init(modal);
+
+    var img_box = document.querySelectorAll('.materialboxed');
+    var instances_img_box = M.Materialbox.init(img_box);
   });
 
