@@ -9,17 +9,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
 </head>
 <body>
+    <ul id="slide-out" class="sidenav">
+
+        <li><a href="#!"><i class="material-icons">settings</i>Главная</a></li>
+        <li><a href="#!"><i class="material-icons">games</i>Игры</a></li>
+        <li><a href="#!"><i class="material-icons">library_music</i>Музыка</a></li>
+        <li><a href="#!"><i class="material-icons">video_library</i>Видео</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть</a></li>
+
+      </ul>
+      <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
 <header class="header">
     <div class="container">
         <div class="header__title">
             <img class="logo" src="./img/logo.svg" alt="Logo">
-            <button class="burger">
+            <a class="burger sidenav-trigger" data-target="slide-out">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
-            </button>
+            </a>
         </div>
         <h1 class="h1">
             реализуем крупнейшие проекты в россии
@@ -311,5 +324,9 @@
                 </div>
             </div>
            </footer>
+           <script type="text/javascript" src="js/materialize.min.js"></script>
+           <script type="text/javascript" src="js/main.js"></script>
+           
+
 </body>
 </html>
