@@ -156,6 +156,24 @@ div.parent{
     opacity: 0.5;
   }
 
+  /* Custom title */
+  [mytitle] {
+    cursor: pointer;
+  }
+
+  [mytitle]:after {
+    content: '';
+    transition: 0.2s;
+  }
+
+  [mytitle]:hover:after {
+    width: 550px;
+    display: block;
+    content: attr(mytitle);
+    background-color: #e68c1f;
+    padding: 10px;
+    z-index: 100;
+  }
 
 
  /* img{
