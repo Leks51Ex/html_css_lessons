@@ -1,0 +1,80 @@
+body, ul, li, h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.header{
+    height: 150px;
+    background-color: #75084d;
+}
+
+
+.menu{
+    position: sticky;
+    top: 0;
+
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: #deb30a;
+    padding: 15px;
+}
+
+
+.menu li{
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.menu li:last-child{
+    margin-right: 0;
+}
+
+.content{
+    overflow: auto;
+    height: 200vh;
+    padding-bottom: 150px;
+}
+
+
+
+.parent2{
+    background-color: #3076bb;
+    padding: 10px;
+    position: relative;
+    height: 200vh;
+}
+
+.child{
+    padding: 10px;
+
+}
+/* если поддерживается браузером */
+@supports(position: sticky){
+    .child{
+        position: sticky;
+        top: 0;
+    }
+}
+
+.child-one{
+    background-color: #189c5c;
+}
+.child-two{
+    background-color: #0b11bc;
+}
+.child-three{
+    background-color: #c58b20;
+}
