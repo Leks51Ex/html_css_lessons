@@ -188,6 +188,15 @@ div.parent{
  /* pure scroll */
 
 
+
  /* img{
         filter: sepia(100%);
   } */
+
+  .positioning p{
+    max-width: 200px;
+    max-height: 250px;
+    background: gray;
+    overflow:auto;
+    
+  }
