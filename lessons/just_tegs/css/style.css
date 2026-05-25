@@ -222,3 +222,49 @@ div.parent{
     background-color: rgb(106, 99, 154);
   }
 
+
+  .layer1{
+   position: relative;
+   background-color: #ddd;
+   height: 200px;
+  }
+  
+
+  .layer2{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+
+  .parent{
+    background-color: #5f11f5;
+        padding:10px;
+     height: 200vh;
+    }
+
+    .child{
+        padding: 10px;
+    }
+
+    .child-one{
+        position: relative;
+        background-color: #3ed277;
+        z-index: 1;
+    }
+
+    .child-two{
+        position: relative;
+        left: 15px;
+        bottom:  10px;
+        z-index: 2;
+        background-color: #85cf16;
+    }
+
+    .child-three{
+        position: relative;
+        left: 35px;
+        z-index: 3;
+        bottom: 60px;
+        background-color: #c0194b;
+    }
